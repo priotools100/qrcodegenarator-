@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all, index, follow">
+    <title>Free Qr Code Genarator</title>
+    
+    <meta name="google-site-verification" content="ByykX6qaniRV46wT76IzXF1ibuTM_aa8Ylof0NFcOWY" />
+    <meta name="description" content="Generate professional custom QR codes with logos and premium frames instantly.">
+    
+    <script src="https://pl29231727.profitablecpmratenetwork.com/a9/64/78/a96478e0d59722f3e5506c1d279cae85.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+        body { font-family: 'Outfit', sans-serif; background: #0f172a; color: #f8fafc; }
+        .glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.08); }
+        .frame-option { cursor: pointer; transition: 0.4s; border: 2px solid rgba(255,255,255,0.1); }
+        .frame-option.active { border-color: #3b82f6; background: rgba(59, 130, 246, 0.2); }
+        #qrcode img { margin: 0 auto; border-radius: 8px; }
+        
+        .frame-1 { border: 12px solid var(--qr-color); padding: 25px; border-radius: 25px; }
+        .frame-2 { border: 6px dashed var(--qr-color); padding: 25px; border-radius: 50%; }
+        .frame-3 { border-left: 20px solid var(--qr-color); padding: 25px; background: white; }
+        .frame-4 { outline: 10px double var(--qr-color); outline-offset: 12px; padding: 12px; }
+        .frame-5 { border: 12px solid var(--qr-color); border-radius: 0 50px 0 50px; padding: 25px; }
+
+        .btn-gradient { background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); }
+    </style>
+</head>
+<body class="min-h-screen py-6 px-4">
+
+    <div class="flex justify-center mb-8">
+        <script type="text/javascript">
+            atOptions = { 'key' : 'defbcbda8ac176017b82d3ea7b839fa2', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/defbcbda8ac176017b82d3ea7b839fa2/invoke.js"></script>
+    </div>
+
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
+        
+        <div class="hidden lg:flex flex-col gap-4">
+            <script type="text/javascript">
+                atOptions = { 'key' : 'dd5c6ca73235a8f50dcb63ebafeb6536', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/dd5c6ca73235a8f50dcb63ebafeb6536/invoke.js"></script>
+            
+            <script type="text/javascript">
+                atOptions = { 'key' : 'bc0cc45f7e592f63ea078f63fd78be0b', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/bc0cc45f7e592f63ea078f63fd78be0b/invoke.js"></script>
+        </div>
+
+        <div class="flex-1">
+            <div class="text-center mb-10">
+                <h1 class="text-5xl font-black italic tracking-tighter">QR STUDIO <span class="text-blue-500">PRO</span></h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-3xl space-y-4">
+                        <input type="text" id="qrText" class="w-full bg-slate-900 border border-slate-700 p-4 rounded-xl text-white" placeholder="Enter URL or Text">
+                        
+                        <div class="flex gap-4">
+                            <input type="color" id="qrColor" value="#3b82f6" class="w-20 h-12 bg-slate-900 border border-slate-700 rounded-xl cursor-pointer">
+                            <button onclick="document.getElementById('logoInput').click()" class="flex-1 bg-slate-800 rounded-xl text-[10px] font-black uppercase">Upload Logo</button>
+                            <input type="file" id="logoInput" accept="image/*" class="hidden">
+                        </div>
+
+                        <div class="flex justify-center py-2">
+                            <script type="text/javascript">
+                                atOptions = { 'key' : '266672493cb80548f73e759ea4de5f76', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+                            </script>
+                            <script type="text/javascript" src="https://www.highperformanceformat.com/266672493cb80548f73e759ea4de5f76/invoke.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-3xl">
+                        <div class="grid grid-cols-3 gap-2" id="frameList">
+                            <div onclick="selectFrame(0, this)" class="frame-option active p-2 text-center rounded-lg text-[9px] font-black">MINIMAL</div>
+                            <div onclick="selectFrame(1, this)" class="frame-option p-2 text-center rounded-lg text-[9px] font-black">CLASSIC</div>
+                            <div onclick="selectFrame(2, this)" class="frame-option p-2 text-center rounded-lg text-[9px] font-black">MODERN</div>
+                        </div>
+                    </div>
+
+                    <button onclick="generateQR()" class="btn-gradient w-full py-5 rounded-2xl font-black text-xl uppercase tracking-widest transition-all">Generate QR ✨</button>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="glass-card p-8 rounded-[2.5rem] w-full flex flex-col items-center min-h-[400px]">
+                        <div id="capture-area" class="bg-white p-6 rounded-2xl relative">
+                            <div id="qrcode"></div>
+                            <img id="logo-preview" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-lg hidden border-2 border-white bg-white object-contain">
+                        </div>
+                        
+                        <div id="download-section" class="mt-8 hidden">
+                            <button onclick="downloadQR()" class="bg-emerald-500 px-10 py-4 rounded-xl font-black uppercase tracking-widest">Download PNG</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <script type="text/javascript">
+                            atOptions = { 'key' : '3ec990079b83093ee801d9624caa303d', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                        </script>
+                        <script type="text/javascript" src="https://www.highperformanceformat.com/3ec990079b83093ee801d9624caa303d/invoke.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 flex justify-center bg-slate-900/50 p-2 rounded-xl">
+                <script type="text/javascript">
+                    atOptions = { 'key' : '0fd5d712fbbab0ce103a3114798e07cb', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://www.highperformanceformat.com/0fd5d712fbbab0ce103a3114798e07cb/invoke.js"></script>
+            </div>
+
+            <footer class="mt-8 text-center text-slate-600 text-[10px] font-black uppercase tracking-widest">
+                © 2026 ELITE WEB UTILITIES
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        let currentFrame = 0;
+        const qrcodeDiv = document.getElementById("qrcode");
+        const logoPreview = document.getElementById("logo-preview");
+        const captureArea = document.getElementById("capture-area");
+
+        document.getElementById('logoInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => { logoPreview.src = event.target.result; logoPreview.classList.remove('hidden'); }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        function selectFrame(index, el) {
+            currentFrame = index;
+            document.querySelectorAll('.frame-option').forEach(f => f.classList.remove('active'));
+            el.classList.add('active');
+        }
+
+        function generateQR() {
+            const text = document.getElementById("qrText").value;
+            if (!text) return alert("Enter content!");
+            const color = document.getElementById('qrColor').value;
+            qrcodeDiv.innerHTML = "";
+            new QRCode(qrcodeDiv, { text: text, width: 250, height: 250, colorDark: color, colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H });
+            captureArea.style.setProperty('--qr-color', color);
+            captureArea.className = "bg-white p-6 rounded-2xl relative";
+            if(currentFrame > 0) captureArea.classList.add(`frame-${currentFrame}`);
+            document.getElementById("download-section").classList.remove("hidden");
+        }
+
+        function downloadQR() {
+            html2canvas(captureArea, { scale: 3, useCORS: true }).then(canvas => {
+                const link = document.createElement("a");
+                link.download = "QR-Code.png";
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>
